@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palavras Cruzadas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container home-shell">
+      <header class="hero home-hero">
+        <div class="hero-top">
+          <div>
+            <h1>Palavras Cruzadas</h1>
+            <p>Escolha um tema e comece uma nova rodada com palavras inspiradas em História, Geografia e Conhecimentos Gerais do Brasil.</p>
+          </div>
+          <button id="themeToggle" class="icon-btn" type="button" aria-label="Alternar modo escuro">🌙</button>
+        </div>
+
+        <div class="theme-grid">
+          <button class="theme-card active" data-theme="historia" type="button">
+            <span class="theme-emoji">🏛️</span>
+            <strong>História</strong>
+            <small>Impérios, revoluções e fatos.</small>
+          </button>
+          <button class="theme-card" data-theme="geografia" type="button">
+            <span class="theme-emoji">🌎</span>
+            <strong>Geografia</strong>
+            <small>Regiões, estados, relevo e paisagens.</small>
+          </button>
+          <button class="theme-card" data-theme="conhecimentos" type="button">
+            <span class="theme-emoji">🧠</span>
+            <strong>Conhecimentos Gerais</strong>
+            <small>Curiosidades, cultura e cotidiano.</small>
+          </button>
+        </div>
+
+        <div class="home-actions">
+          <button id="startBtn" type="button">Começar jogo</button>
+          <p id="homeStatus">Tema selecionado: História</p>
+        </div>
+      </header>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

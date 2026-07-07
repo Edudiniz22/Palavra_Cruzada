@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Palavras Cruzadas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <div class="game-head">
+          <div>
+            <h1 id="themeLabel">🏛️ História</h1>
+            <p id="themeDescription">Palavras ligadas à história do Brasil.</p>
+            <p id="gameVariantLabel">Variante 1 de 5</p>
+          </div>
+          <div class="actions">
+            <button id="themeToggle" class="icon-btn" type="button" aria-label="Alternar modo escuro">🌙</button>
+            <button id="backBtn" type="button">← Voltar</button>
+          </div>
+        </div>
+
+        <div class="game-head">
+          <div class="score-pill">Pontos: <span id="scoreValue">0</span></div>
+          <div class="actions">
+            <button id="checkBtn" type="button">Verificar</button>
+            <button id="revealBtn" type="button">Revelar</button>
+            <button id="newGameBtn" type="button">Novo jogo</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="board-card">
+          <div class="board-header">
+            <h2>Grade</h2>
+          </div>
+          <div id="board" class="grid" aria-label="Tabuleiro de palavras cruzadas"></div>
+          <div id="message" class="message" role="status" aria-live="polite"></div>
+        </section>
+
+        <aside class="clues-card">
+          <section class="clues-section">
+            <h3>Palavras</h3>
+            <ul id="acrossClues" class="clue-list"></ul>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
